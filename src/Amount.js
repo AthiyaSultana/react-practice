@@ -25,6 +25,7 @@ class Amount extends Component {
           -
         </button>
         {this.props.children(this.state.amount)}
+
       </div>
     );
   }
