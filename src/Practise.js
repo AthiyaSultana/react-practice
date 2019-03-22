@@ -29,18 +29,11 @@ class Practise extends Component {
     ]
   };
 
-  setInfo = function(user) {
-    console.log(user);
-    this.setState(function(prevState) {
+  setInfo = user => {
+    this.setState(() => {
       return (user.ishidden = !user.ishidden);
     });
   };
-  // setInfo = (e, user, x) => {
-  //   console.log("user", e);
-  //   this.setState(function(prevState) {
-  //     return (user.ishidden = !user.ishidden);
-  //   });
-  // };
   render() {
     const { data } = this.state;
     return (
